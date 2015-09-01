@@ -64,7 +64,7 @@ module.exports = function( options ) {
     setObjects : function setObjects( newObjects ) {
       options.objects = newObjects
     },
-    addObject : function addObject( object ) {
+    add : function addObject( object ) {
       options.objects.push(object)
     },
     config : function config( config ) {
