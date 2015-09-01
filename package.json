@@ -1,4 +1,5 @@
 {
+  "name": "nearestneighbour",
   "main": "nearestneighbour.js",
   "version": "0.0.1",
   "description": "a general purpose nearest neighbour framework, an A.I. tool useful for machine learning and outcome estimation",
