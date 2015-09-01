@@ -1,7 +1,7 @@
 {
   "name": "nearestneighbour",
   "main": "nearestneighbour.js",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "a general purpose nearest neighbour framework, an A.I. tool useful for machine learning and outcome estimation",
   "repository": {
     "type": "git",
@@ -14,12 +14,16 @@
     "test": "expresso test/*"
   },
   "keywords": [
+    "k nearest neighbour",
+    "kth nearest neighbour",
+    "k-NN",
     "nearest",
     "neighbour",
     "neighbor",
     "nn",
     "knn",
-    "ai"
+    "ai",
+    "machine learning"
   ],
   "author": "Anton Panchishin",
   "license": "Unlicense",

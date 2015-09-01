@@ -74,3 +74,5 @@ This is part of a set of related projects.
 
 # References
 
+* [Instructor: Patrick Winston from MIT](http://www.youtube.com/v/09mb78oiPkA)
+* [Wikipedia](https://en.wikipedia.org/wiki/K-nearest_neighbors_algorithm)
