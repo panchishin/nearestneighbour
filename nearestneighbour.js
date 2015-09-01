@@ -63,5 +63,9 @@ module.exports = function(subject, objects, options) {
     .sort( function( a , b ) { return a.dist - b.dist } )
     .map( function( item ) { return item.object } )
 
-  return options.number && options.number <= sortMap.length ? sortMap.slice(0, options.number ) : sortMap
+  if ( options.number ) {
+    return sortMap.slice(0, options.number )
+  } else {
+    return sortMap
+  }
 }
