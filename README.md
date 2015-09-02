@@ -68,6 +68,7 @@ Each object in *objects* can be any object you want but is must have at a minimu
 This is part of a set of related projects.
 
 * [AlphaBeta](https://www.npmjs.com/package/alphabeta)
+* [Boosting](https://www.npmjs.com/package/boosting)
 * [GeneticAlgorithm](https://www.npmjs.com/package/geneticalgorithm)
 * [NearestNeighbour](https://www.npmjs.com/package/nearestneighbour)
 * [NeuralNet](https://www.npmjs.com/package/neuralnet)
@@ -75,4 +76,4 @@ This is part of a set of related projects.
 # References
 
 * [Instructor: Patrick Winston from MIT](http://www.youtube.com/v/09mb78oiPkA)
-* [Wikipedia](https://en.wikipedia.org/wiki/K-nearest_neighbors_algorithm)
+* [Wikipedia](https://en.wikipedia.org/wiki/K-nearest_neighbors_algorithm)* [Boosting](https://www.npmjs.com/package/boosting)
