@@ -1,7 +1,7 @@
 {
   "name": "nearestneighbour",
   "main": "nearestneighbour.js",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "description": "a general purpose nearest neighbour framework, an A.I. tool useful for machine learning and outcome estimation",
   "repository": {
     "type": "git",
