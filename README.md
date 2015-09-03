@@ -1,3 +1,5 @@
+[![Issues][issues-image]][issues-url] [![Downloads][downloads-image]][downloads-url] [![Auto Test Status][travis-image]][travis-url] [![license][license-image]][license-url] [![Gitter chat][gitter-image]][gitter-url]
+
 NearestNeighbour is a method of looking up best matches.
 
 Section Links : [Construction](#construction) , [Execution](#execution) , [Examples](#example) , [FAQ](#faq) , [Related](#related-ai-projects) , and [References](#references)
@@ -77,3 +79,19 @@ This is part of a set of related projects.
 
 * [Instructor: Patrick Winston from MIT](http://www.youtube.com/v/09mb78oiPkA)
 * [Wikipedia](https://en.wikipedia.org/wiki/K-nearest_neighbors_algorithm)* [Boosting](https://www.npmjs.com/package/boosting)
+
+[issues-url]: https://github.com/panchishin/nearestneighbour/issues
+[issues-image]: https://img.shields.io/github/issues/panchishin/nearestneighbour.svg
+
+[gitter-url]: https://gitter.im/panchishin/nearestneighbour
+[gitter-image]: https://badges.gitter.im/panchishin/nearestneighbour.png
+
+[downloads-image]: http://img.shields.io/npm/dm/nearestneighbour.svg
+[downloads-url]: https://www.npmjs.com/~panchishin
+
+[travis-url]: https://travis-ci.org/panchishin/nearestneighbour
+[travis-image]: http://img.shields.io/travis/panchishin/nearestneighbour.svg
+
+[license-image]: https://img.shields.io/badge/license-Unlicense-green.svg
+[license-url]: https://tldrlegal.com/license/unlicense
+
