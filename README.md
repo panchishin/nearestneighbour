@@ -19,7 +19,7 @@ Set the configuration options like so:
 ```js
 var config = {
 	objects : [ object1 , object2 , object3 ],
-	number : 2
+	number : 2  // the number of results
 }
 # in two steps
 var nearestNeighbour = require('nearestneighbour')()
