@@ -4,7 +4,7 @@ NearestNeighbour is a method of looking up best matches.  Best matches of what? 
 
 You can improve the accuracy of NearestNeighbour by providing it with more data.  The data can be anything you want so long as it works with your distance function.  Don't have a distance function?  No problem, I made a cartisian distance checker for you that works with objects that have one or more key:number entries.  If you don't specify a distance function then the cartisian distance checker is used.
 
-When would you use NearestNeighbour vs a NeuralNet?  First.  That's right, NearestNeighbour "learns" faster, calculates quickly, and is (in my humble opinion) more flexible.  Amazon (used to) suggest related books and items to customers using NearestNeighbour and built a huge online empire on the upsales from doing so.  Play with NearestNeighbour a bit and you'll quickly see how you could get really accurate upsales lists based on someones previous shopping history and what other people shop for.
+When would you use NearestNeighbour vs a NeuralNet?  First.  That's right, NearestNeighbour "learns" faster, calculates quickly, and is (in my humble opinion) more flexible.  Amazon (used to) suggest related books and items to customers using NearestNeighbour (or something very similar to it) and built a huge online empire on the upsales from doing so.  Play with NearestNeighbour a bit and you'll quickly see how you could get really accurate upsales lists based on someones previous shopping history and what other people shop for.
 
 Section Links : [Construction](#construction) , [Execution](#execution) , [Examples](#example) , [FAQ](#faq) , [Related](#related-ai-projects) , and [References](#references)
 
