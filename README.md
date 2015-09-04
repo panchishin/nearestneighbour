@@ -52,6 +52,11 @@ var config = {
 	distanceFunction	: yourDistanceFunction
 }
 ```
+You can set the configuration wholely or just change one aspect using the *.config* function like so:
+```js
+# change the number of results to 5
+nearestNeighbour.config({number:5})
+```
 
 # Example
 This is a very simple example that finds the object with the closest match.
