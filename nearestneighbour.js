@@ -1,47 +1,6 @@
 "use strict";
 
-function defaultDistanceFunction( subject , object , objects , options) {
-
-  function allStd(subject, objects) {
-    var all = objects.slice(0)
-    all.push(subject)
-
-    function std(array, key) {
-      array = array.map( function( item ) { return item[key] })
-      var average = array.reduce( function( x , y ) { return x + y } ) / array.length
-
-      var ssqdiff = 0;
-      array.forEach( function( x ) { ssqdiff += Math.pow(x - average, 2) })
-      return Math.sqrt(ssqdiff / array.length);
-    }
-
-    var result = {}
-    Object.keys(subject).forEach( function(attr) { result[attr] = std(all,attr) })
-    return result
-  }
-
-  options.weights = options.weights || {}
-
-  if (options && options.standardize && ! options.stdv) {
-    options.stdv = allStd(subject, objects)
-  }
-
-  var result = 0
-  for (var attr in subject) {
-    var x = subject[attr]
-    var y = object[attr]
-    if (options && options.stdv && options.stdv[attr] ) {
-      x /= options.stdv[attr];
-      y /= options.stdv[attr];
-    }
-    if (options && options.weights && options.weights[attr] ) {
-      x *= options.weights[attr];
-      y *= options.weights[attr];
-    }
-    result += Math.pow(x - y, 2);
-  }
-  return result;
-}
+var defaultDistanceFunction = require("./src/weightedDistanceCalculator.js")
 
 function distances( subject , objects , options ) {
   var results = [];
@@ -63,15 +22,18 @@ module.exports = function( options ) {
   return {
     setObjects : function setObjects( newObjects ) {
       options.objects = newObjects
+      return this
     },
     add : function addObject( object ) {
       options.objects.push(object)
+      return this
     },
     config : function config( config ) {
       config = config || {}
       options.filter = config.filter || options.filter
       options.distanceFunction = config.distanceFunction || options.distanceFunction
       options.objects = config.objects || options.objects
+      return config
     },
     nearest : function nearest( subject ) {
       var sortMap = distances( subject , options.objects.filter( options.filter ) , options )

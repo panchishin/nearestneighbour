@@ -1,6 +1,10 @@
 [![Issues][issues-image]][issues-url] [![Downloads][downloads-image]][downloads-url] [![Auto Test Status][travis-image]][travis-url] [![license][license-image]][license-url] [![Gitter chat][gitter-image]][gitter-url]
 
-NearestNeighbour is a method of looking up best matches.
+NearestNeighbour is a method of looking up best matches.  Best matches of what?  Of your data of course, using your distance function.  If you have a list of robotic motions , previous limb location and speed along with current limb speed and the torque that was applied then you can use NearestNeighbour to look up the best guess torque needed to make the current state transition into a target state.  If you have a list of books and their ranking in several dimensions such as romance level, word count, and popularity.  You can use NearestNeighbour to find the best matches for a person based on their preferences of romance level, word count, etc.
+
+You can improve the accuracy of NearestNeighbour by providing it with more data.  The data can be anything you want so long as it works with your distance function.  Don't have a distance function?  No problem, I made a cartisian distance checker for you that works with objects that have one or more key:number entries.  If you don't specify a distance function then the cartisian distance checker is used.
+
+When would you use NearestNeighbour vs a NeuralNet?  First.  That's right, NearestNeighbour "learns" faster, calculates quickly, and is (in my humble opinion) more flexible.  Amazon (used to) suggest related books and items to customers using NearestNeighbour and built a huge online empire on the upsales from doing so.  Play with NearestNeighbour a bit and you'll quickly see how you could get really accurate upsales lists based on someones previous shopping history and what other people shop for.
 
 Section Links : [Construction](#construction) , [Execution](#execution) , [Examples](#example) , [FAQ](#faq) , [Related](#related-ai-projects) , and [References](#references)
 
@@ -63,7 +67,7 @@ console.log( neighbour.nearest({ a : 1 })[0] )
 # returns { a : 2 }
 ```
 # FAQ
-Each object in *objects* can be any object you want but is must have at a minimum the same keys as the keys in the searchObject.  Additionally, the values of the keys in the searchObject and the objects must be *Numbers*.
+Each object in *objects* can be any object you want.  If you are using the default distance function the object must have at a minimum the same keys as the keys in the searchObject.  Additionally, the values of the keys in the searchObject and the objects must be *Numbers*.
 
 
 # Related AI Projects
